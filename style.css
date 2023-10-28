@@ -1,0 +1,307 @@
+*, ::before, ::after
+{
+    box-sizing: border-box;
+}
+
+:root
+{
+    --primary-red: hsl(0, 100%, 74%);
+    --primary-green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --accent-dark-blue: hsl(249, 10%, 26%); 
+    --neutral-grayish-blue: hsl(246, 25%, 77%);
+}
+
+body
+{
+    margin: 0;
+    padding: 4rem 1rem;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-red);
+    background-image: url('images/bg-intro-mobile.png');
+    background-size: cover;
+    background-position: center
+}
+
+.main
+{
+    font-size: .8rem;
+    text-align: center;
+    color: white;
+}
+
+.header_box
+{
+   font-size: 1.5rem;
+   background-color: var(--blue);
+   border-radius: .5rem;
+   box-shadow: 0rem .5rem 0rem rgba(44, 0, 0, .2);
+   padding: .5rem 6rem;
+   margin-top: 4rem;
+   margin-bottom: 2rem;
+   text-align: center;
+}
+
+.form_component
+{
+    background-color: white;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.button
+{
+    margin-top: .5rem;
+    border: none;
+    border-radius: .5rem;
+    border-bottom: .3rem solid hsl(154, 58%, 45%);
+    background-color: var(--primary-green);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1rem 4rem;
+}
+
+.button:hover
+{
+    cursor: pointer;
+    background-color: rgb(123, 209, 123);
+}
+
+.lead
+{
+  font-size: 1rem;
+  font-weight: 400;
+  padding-inline: 1.7rem;
+}
+
+.header_box > h2
+{  
+    font-size: .7rem;
+    color: white;
+    font-weight: 400;
+}
+
+.header_box > h2 > span
+{
+    font-weight: 700;
+}
+
+.form > input
+{
+    max-width: 100%;
+    margin: .5rem 0rem 0rem;
+    padding: 1rem 3rem;
+    border-radius: .3rem;
+    border: .1rem solid var(--neutral-grayish-blue);
+    font-weight: 700;
+}
+
+input:hover
+{
+    border: .1rem solid var(--blue);
+}
+
+.form > input:focus
+{
+    border: .1rem solid var(--blue) !important;
+    border-color: var(--blue);
+}
+
+.error_first, .error_last, .error_email, .error_pass
+{
+    display: none;
+    position: relative;
+    bottom: 3rem;
+    left: 19rem;
+}
+
+#result_first, #result_last
+{
+    height: 1rem;
+    color: var(--primary-red);
+}
+
+#result_first, #result_last, #result_email, #result_pass
+{
+    font-size: .5rem;
+    text-align: right;
+    font-style: italic;
+    color: var(--primary-red);
+    padding-right: 1rem;
+}
+
+.terms
+{
+    font-size: .6rem;
+    font-weight: 600;
+    color: var(--neutral-grayish-blue);
+    padding-inline: 3rem;
+}
+
+.terms_link
+{
+    color: var(--primary-red);
+    text-decoration-line: none;
+}
+
+@media (min-width: 450px) and (max-width: 649px)
+{
+    body 
+    {
+        margin: 0 auto;
+    }
+
+    aside
+    {
+        margin-inline: 4rem;
+    }
+
+    .header_box
+    {
+        max-width: 398px;
+    }
+
+     .form_component
+     {
+        max-width: 398px;
+     }
+}
+
+@media (min-width: 650px) and (max-width: 839px)
+{
+    body 
+    {
+        background-image: url('images/bg-intro-desktop.png'); 
+        padding: 5rem; 
+    }
+
+    .grid-items
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main
+    {
+        padding-top: 8rem;
+    }
+
+    .title
+    {
+        text-align: left;
+    }
+
+    .lead
+    {
+        padding-inline: 0;
+        font-size: .7rem;
+    }
+
+
+    .header_box
+    {
+   padding: .5rem 3rem;
+   margin-top: 0;
+   margin-bottom: 2rem;
+   }
+
+   .button
+   {
+       padding-inline: 4rem;
+   }
+
+    form > input
+    {
+        display: block;
+        padding: .5rem 0rem;
+    }
+}
+
+@media (min-width: 840px)
+{
+    body
+    {
+        background-image: url(images/bg-intro-desktop.png);
+    }
+
+    .grid-items
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main
+    {
+        text-align: left;
+        margin-right: 0;
+    }
+
+    .title
+    {
+        font-size: 2rem;
+        padding-left: 7rem;
+        padding-right: 8rem;
+        padding-top: 7rem;
+    }
+
+    .lead
+    {
+        padding-inline: 0;
+        font-size: .8rem;
+    }
+
+    .header_box
+    {
+        margin-right: 16rem;
+        margin-top: 0;
+        padding-inline: 0;
+    }
+
+    .form_component
+    {
+        margin-right: 16rem;
+    }
+
+    input
+    {
+        display: block;
+    }
+
+    .button
+    {
+        padding: 1rem 4rem;
+    }
+
+    .terms
+    {
+        padding-inline: 0;
+    }
+}
+
+@media (min-width: 1120px)
+{
+    .header_box
+    {
+        margin: 2rem 10rem;
+    }
+
+    .form_component
+    {
+       margin: 0 10rem;
+    }
+
+    .form > input
+    {
+        padding-inline: 5rem;
+    }
+
+    .button
+    {
+        
+        padding-inline: 6rem;
+    }
+}
