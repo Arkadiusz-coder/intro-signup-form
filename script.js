@@ -23,23 +23,23 @@ function validateInfos ()
 
     if (firstValue === "")
     {
-        resultFirst.textContent === "First Name cannot be empty";
+        resultFirst.textContent = "First Name cannot be empty";
         document.querySelector(".error_first").style.display = "block";
     }
     else if (!/^[a-zA-Z]+$/.test(firstValue))
     { 
-        resultLast.textContent === "First Name must be only letters";
+        resultFirst.textContent = "First Name must be only letters";
         document.querySelector(".error_first").style.display = "block"; 
     }
 
     if (lastValue === "")
     {
-        resultLast.textContent === "Last Name cannot be empty";
+        resultLast.textContent = "Last Name cannot be empty";
         document.querySelector(".error_last").style.display = "block";
     }
     else if (!/^[a-zA-Z]+$/.test(lastValue))
     { 
-        resultLast.textContent === "Last Name must be only letters";
+        resultLast.textContent = "Last Name must be only letters";
         document.querySelector(".error_last").style.display = "block"; 
     }
 
@@ -50,7 +50,7 @@ function validateInfos ()
     }
     else if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}$/.test(emailValue))
     { 
-        resultEmail.textContent = "Email must contains at least six letters and at least one number";
+        resultEmail.textContent = "Looks like this is not an email";
         document.querySelector(".error_email").style.display = "block"; 
     }
 
