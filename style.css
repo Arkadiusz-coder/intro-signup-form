@@ -24,6 +24,11 @@ body
     background-position: center
 }
 
+.grid-items
+{
+    min-width: 336px;
+}
+
 .main
 {
     font-size: .8rem;
@@ -116,17 +121,12 @@ input:hover
     display: none;
     position: relative;
     bottom: 3rem;
-    left: 19rem;
-}
-
-#result_first, #result_last
-{
-    height: 1rem;
-    color: var(--primary-red);
+    left: 15rem;
 }
 
 #result_first, #result_last, #result_email, #result_pass
 {
+    position: relative;
     font-size: .5rem;
     text-align: right;
     font-style: italic;
@@ -147,6 +147,7 @@ input:hover
     color: var(--primary-red);
     text-decoration-line: none;
 }
+
 
 @media (min-width: 450px) and (max-width: 649px)
 {
@@ -169,7 +170,17 @@ input:hover
      {
         max-width: 398px;
      }
-}
+
+     .error_first, .error_last, .error_email, .error_pass
+     {
+        left: 15rem;
+     }
+
+     #result_first, #result_last, #result_email, #result_pass
+     {
+        padding-right: 1rem;
+     }
+}   
 
 @media (min-width: 650px) and (max-width: 839px)
 {
@@ -297,6 +308,11 @@ input:hover
     .form > input
     {
         padding-inline: 5rem;
+    }
+
+    .error_first, .error_last, .error_email, .error_pass
+    {
+        left: 20rem;
     }
 
     .button
