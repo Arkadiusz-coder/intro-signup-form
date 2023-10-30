@@ -16,7 +16,7 @@ Users should be able to:
 # links
 
 solution URL: https://github.com/Arkadiusz-coder/intro-signup-form
-live site URL: https://arkadiusz-coder.github.io/intro-signup-form/
+live site URL: [https://arkadiusz-coder.github.io/intro-signup-form/](https://arkadiusz-coder.github.io/intro-signup-form/)
 
 # build with
 
